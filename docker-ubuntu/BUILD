@@ -29,9 +29,9 @@ container_test(
     image = ":basic_ubuntu",
 )
 
-container_test(
-    name = "basic_ubuntu_dockerfile_test",
-    configs = ["//docker-ubuntu/test_configs:basic_ubuntu_2.yaml"],
-    driver = "tar",
-    image = "@basic_ubuntu_dockerfile//image:dockerfile_image",
-)
+#container_test(
+#    name = "basic_ubuntu_dockerfile_test",
+#    configs = ["//docker-ubuntu/test_configs:basic_ubuntu_2.yaml"],
+#    driver = "tar",
+#    image = "@basic_ubuntu_dockerfile//image:dockerfile_image",
+#)
